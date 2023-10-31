@@ -1,0 +1,311 @@
+/*JQUERY NEEDED CLASSES*/
+/*-------------------------------------------------------------------------------*/
+
+.stickyDivLinkOnPagePart {
+
+    border-bottom: 4px solid rgb(71, 88, 65);
+
+    font-weight: 700;
+
+}
+
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+
+
+.gallery-text-lower {
+
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+
+}
+
+.sticky-div {
+
+    background-color: #eeeeee;
+    border-bottom:1px solid gray;
+    border-top:1px solid gray;
+
+
+    height: 10vh;
+    width: 100%;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 14vh;
+
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-div-title-container {
+
+    position: relative;
+    flex: 5;
+
+    display: flex;
+    align-items: center;
+
+}
+
+
+.sticky-div-title {
+
+    position: absolute;
+    width: 50vw;
+    margin-left: 3vw;
+
+    text-align: right;
+
+    font-family: 'Anton', sans-serif;
+    font-size: 3vh;
+
+}
+
+.sticky-div-contents {
+
+    flex: 10;
+    margin-top: 4vh;
+    text-align: right;
+
+}
+
+.sticky-div-page-link {
+
+    display: inline-block;
+
+    margin-right: 10px;
+
+    text-decoration: none;
+    color: black;
+
+    transition: 0.2s;
+}
+
+.sticky-div-page-link:hover {
+
+    color: rgb(71, 88, 65);
+
+}
+
+.sticky-div-btn {
+
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(71, 88, 65);
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+
+    padding: 8px;
+
+    margin-right: 10px;
+    background-color: rgb(71, 88, 65);
+    color: white;
+
+}
+
+.sticky-div-btn:hover {
+
+    border: 1px solid rgb(71, 88, 65);
+    background-color: rgba(71, 88, 65,0);
+    color: rgb(71, 88, 65);
+}
+
+.scuba-diving-main-icons {
+
+    background-color: white;
+
+    height: 10vh;
+    width: 100vw;
+
+    padding-top: 2vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scuba-diving-main-icons-icon-div {
+
+    background-color: #eeeeee;
+
+    width: 150px;
+    height: 100%;
+
+    margin-right: 2vw;
+    margin-left: 2vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.white-background{
+    position: relative;
+
+    background-color: white;
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+
+}
+
+.scuba-diving-info-div {
+    
+    position: relative;
+    
+    background-color: #eeeeee;
+
+    width: 80vw;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.scuba-diving-info-title-div {
+
+    position: relative;
+    margin-bottom: 2vh;
+    
+
+    border-left: 4px solid rgb(71, 88, 65);
+
+}
+
+.scuba-diving-info-title {
+
+
+    font-size: 2.5vh;
+    font-weight: 700;
+
+    margin-left: 2vw;
+
+}
+
+.scuba-diving-info-text {
+    
+    position: relative;
+    margin: 2vh;
+
+}
+
+.scuba-diving-info-tables-container {
+
+    display: flex;
+
+    border-top: 1px solid lightgray;
+    
+    padding-top: 1vh;
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+}
+
+.scuba-diving-info-tables-title {
+
+    flex: 3;
+    text-align: left;
+
+    font-weight: 700;
+}
+
+.scuba-diving-info-tables-table-div-container {
+
+    flex: 5;
+
+}
+
+.scuba-diving-info-list {
+
+    line-height: 1.8
+
+}
+
+table {
+
+    border-collapse: collapse;
+    width: 35vw;
+
+    margin-top: 4vh;
+
+}
+
+td {
+
+    border-top:1px solid gray;
+
+}
+
+.tr-white {
+
+    background-color: white;
+
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+.sticky-div-contents {
+
+    display: none;
+}
+
+.sticky-div-title {
+
+    text-align:center;
+    width: 100vw;
+
+}
+
+.scuba-diving-info-tables-container {
+
+    flex-direction: column;
+
+}
+
+
+.scuba-diving-info-tables-title {
+
+    text-align: center;
+    margin-bottom: 1vh;
+
+}
+
+table {
+
+    width: 75vw;
+
+
+
+}
+
+.gallery {
+
+    height: 30vh;
+}
+}
