@@ -1,5 +1,3 @@
-//Sticky Div
-
 var link1= document.getElementById("sticky-div-link1");
 var link2= document.getElementById("sticky-div-link2");
 var link3= document.getElementById("sticky-div-link3");
@@ -62,6 +60,3 @@ window.addEventListener('scroll', function() {
         link3.classList.add('stickyDivLinkOnPagePart');
     }
 })
-
-
-

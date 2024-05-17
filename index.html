@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Meta-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diving Makarska</title>
-
+    <title>Diving in Croatia | More Sub</title>
+    <meta name="description" content="Diving in Makarska - Find and book your next Diving Trip or Snorkeling Tour, in your Favorite 5 star PADI Dive Resort!"/>
+    
     <link rel="stylesheet" href="Stranice/index/index.css">
+    <link rel="icon" href="Materijali/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Materijali/favicon/favicon-32x32.png" type="image/x-icon">
 
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--FONT AWSOME KIT-->
+    <script src="https://kit.fontawesome.com/dd7283e13c.js" crossorigin="anonymous"></script>
+    <!--MATERIAL ICONS KIT-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    
+
+    <!--Fonts-->
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +33,6 @@
     <!--ANTON FONT-->
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     
-    <!--FONT AWSOME KIT-->
-    <script src="https://kit.fontawesome.com/dd7283e13c.js" crossorigin="anonymous"></script>
-
-    <!--JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
     <!--DOMINE FONT&-->
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet">
@@ -33,15 +40,14 @@
 </head>
 <body>
 
+    <!--Loading-->
     <div class="loading-div">
-
         <img class="loading-logo" src="Materijali/logo_black.svg" alt="">
         <div class="loading-text">SCUBA DIVING <br> <div style="text-align: center; font-size: 7vh;">MAKARSKA</div></div>
         <div class="loading-text2">MORE SUB</div></div>
-
-
     </div>
    
+    <!--Sidebar-->
     <div id="sidebar-header" class="sidebar-header">
 
         <div class="logo-sidebar-header-container">
@@ -52,9 +58,9 @@
 
     </div>
 
-    <div id="sidebar" class="sidebar">
+    <div id="sidebar" class="sidebar sidebar-main">
 
-        <a href="index.html" class="sidebar-div">
+        <a id="link-sidebar-home" href="#" class="sidebar-div">
 
             <div class="sidebar-link">HOME</div>
 
@@ -70,7 +76,7 @@
 
         <div id="sidebar-div-diving-course" class="sidebar-div">
 
-            <a href="Stranice/Diving-Course/Diving-Course-Main/Diving-Course-Main.html" id="sidebar-link-diving-course">
+            <a  href="SET_BY_JS" id="sidebar-link-diving-course">
     
                 <div class="sidebar-link">DIVING COURSE</div>
     
@@ -79,19 +85,19 @@
             <div class="sidebar-link-diving-course-icon-div"><i class="fa-sharp fa-solid fa-chevron-right fa-xl sidebar-link-diving-course-icon" style="color:black;"></i></div>
         </div>
 
-        <a href="Stranice/Snorkeling/Snorkeling.html" class="sidebar-div">
+        <a id="link-sidebar-snorkeling" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">SNORKELING</div>
 
         </a>
 
-        <a href="Stranice/Diving-Course/Sea-Life/Sea-Life.html" class="sidebar-div">
+        <a id="link-sidebar-sea-life" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">SEA LIFE</div>
 
         </a>
 
-        <a href="Stranice/Diving-Course/Trips/Trips.html" class="sidebar-div">
+        <a id="link-sidebar-trips" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">TRIPS</div>
 
@@ -109,15 +115,27 @@
 
         <div class="sidebar-scuba-diving-x-icon-div"> <i class="fa-solid fa-x fa-lg sidebar-diving-course-x-icon"></i></div>
 
-        <a href="Stranice/Scuba-Diving/Beach_diving/Beach-diving.html" class="sidebar-div">
+        <a id="link-sidebar-beach-diving" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">BEACH DIVING</div>
 
         </a>
 
-        <a href="Stranice/Scuba-Diving/Every-day_divingtrip/Every-day-diving-trip.html" class="sidebar-div">
+        <a id="link-sidebar-every-day-diving-trip" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">EVERY DAY DIVING TRIP</div>
+
+        </a>
+        
+        <a id="link-sidebar-bubble-maker" href="SET_BY_JS" class="sidebar-div">
+
+            <div class="sidebar-link">BUBBLE MAKER</div>
+
+        </a>        
+
+        <a id="link-sidebar-divers-certificate" href="SET_BY_JS" class="sidebar-div">
+
+            <div class="sidebar-link">DIVING COURSE FOR CERTIFIED DIVERS</div>
 
         </a>
 
@@ -133,37 +151,32 @@
 
         <div class="sidebar-diving-course-x-icon-div"> <i class="fa-solid fa-x fa-lg sidebar-diving-course-x-icon"></i></div>
 
-        <a href="Stranice/Diving-Course/Bubble-Maker/Bubble-Maker.html" class="sidebar-div">
 
-            <div class="sidebar-link">BUBBLE MAKER</div>
-
-        </a>
-
-        <a href="Stranice/Diving-Course/Scuba-Diver/Scuba-Diver.html" class="sidebar-div">
+        <a id="link-sidebar-scuba-diver" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">SCUBA DIVER</div>
 
         </a>
 
-        <a href="Stranice/Diving-Course/Open-Water-Diver/Open-Water-Diver.html" class="sidebar-div">
+        <a id="link-sidebar-open-water-diver" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">OPEN WATER DIVER</div>
 
         </a>
 
-        <a href="Stranice/Diving-Course/Advanced-Open-Water-Diver/Advanced-Open-Water-Diver.html" class="sidebar-div">
+        <a id="link-sidebar-advanced-open-water-diver" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">ADVANCED OPEN WATER DIVER</div>
 
         </a>
 
-        <a href="Stranice/Diving-Course/Rescue-Diver-Course/Rescue-Diver-Course.html" class="sidebar-div">
+        <a id="link-sidebar-rescue-diver-course" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">RESCUE DIVER COURSE</div>
 
         </a>
 
-        <a href="Stranice/Diving-Course/Divemaster/Divemaster.html" class="sidebar-div">
+        <a id="link-sidebar-rescue-divemaster" href="SET_BY_JS" class="sidebar-div">
 
             <div class="sidebar-link">DIVEMASTER</div>
 
@@ -177,11 +190,14 @@
         </div>
 
     </div>
+
     <div id="page-content" class="page-content placeholder">
 
+        <!--Header-->
         <header id="header">
 
-            <div id="menu-btn" class="menu-btn"><i class="fa-solid fa-bars color-green fa-2x"></i></div>
+            <div id="menu-btn" class="menu-btn"><i class="fa-solid fa-bars color-green fa-2x"></i>
+            </div>
 
             <div id="header-logo-container" class="header-logo-container">
 
@@ -191,7 +207,7 @@
 
             <div class="header-links-container">
 
-                <a href="index.html" class="header-link">HOME</a>
+                <a id="link-header-home" href="SET_BY_JS" class="header-link">HOME</a>
 
                 <a class="header-link-diving-course">
                     <div class="dropdown-link-container">
@@ -200,35 +216,35 @@
 
                         <div style="margin-top: 20px; background-color: rgba(0, 0, 0, 0);"></div>
                         <div class="dropdown-content">
-                            <a href="Stranice/Scuba-Diving/Beach_diving/Beach-diving.html">Beach Diving</a>
-                            <a href="Stranice/Scuba-Diving/Every-day_divingtrip/Every-day-diving-trip.html">Every Day Diving Trip</a>
-
+                            <a id="link-header-beach-diving" href="SET_BY_JS">Beach Diving</a>
+                            <a id="link-header-every-day-diving-trip" href="SET_BY_JS">Every Day Diving Trip</a>
+                            <a id="link-header-bubble-maker" href="SET_BY_JS">Bubble Maker</a>
+                            <a id="link-header-divers-certificate" href="SET_BY_JS">Diving Trip For Divers With Certificate</a>
                         </div>
 
                     </div>
                 </a>
 
-                <a href="Stranice/Diving-Course/Diving-Course-Main/Diving-Course-Main.html" class="header-link-diving-course">
+                <a id="link-header-diving-course-main" href="SET_BY_JS" class="header-link-diving-course">
                     <div class="dropdown-link-container">
 
                         <div class="dropdown-btn">DIVING COURSE <i class="fa fa-caret-down"></i> </div>
 
                         <div style="margin-top: 20px; background-color: rgba(0, 0, 0, 0);"></div>
                         <div class="dropdown-content">
-                            <a href="Stranice/Diving-Course/Bubble-Maker/Bubble-Maker.html">Bubble Maker</a>
-                            <a href="Stranice/Diving-Course/Scuba-Diver/Scuba-Diver.html">Scuba Diver</a>
-                            <a href="Stranice/Diving-Course/Open-Water-Diver/Open-Water-Diver.html">Open Water Diver</a>
-                            <a href="Stranice/Diving-Course/Advanced-Open-Water-Diver/Advanced-Open-Water-Diver.html">Advanced Open Water Diver</a>
-                            <a href="Stranice/Diving-Course/Rescue-Diver-Course/Rescue-Diver-Course.html">Rescue Diver Course</a>
-                            <a href="Stranice/Diving-Course/Divemaster/Divemaster.html">Divemaster</a>
+                            <a id="link-header-scuba-diver" href="SET_BY_JS">Scuba Diver</a>
+                            <a id="link-header-open-water-diver" href="SET_BY_JS">Open Water Diver</a>
+                            <a id="link-header-advanced-open-water-diver" href="SET_BY_JS">Advanced Open Water Diver</a>
+                            <a id="link-header-rescue-diver-course" href="SET_BY_JS">Rescue Diver Course</a>
+                            <a id="link-header-rescue-divemaster" href="SET_BY_JS">Divemaster</a>
                         </div>
 
                     </div>
                 </a>
 
-                <a href="Stranice/Snorkeling/Snorkeling.html" class="header-link">SNORKELING</a>
-                <a href="Stranice/Sea-Life/Sea-Life.html" class="header-link">SEA LIFE</a>
-                <a href="Stranice/Trips/Trips.html" class="header-link">TRIPS</a>
+                <a id="link-header-snorkeling" href="SET_BY_JS" class="header-link">SNORKELING</a>
+                <a id="link-header-sea-life" href="SET_BY_JS" class="header-link">SEA LIFE</a>
+                <a id="link-header-trips" href="SET_BY_JS" class="header-link">TRIPS</a>
 
             </div>
 
@@ -236,7 +252,45 @@
 
         </header>
 
-            
+        <!--Corousel-->
+        <div class="carousel">
+            <div class="carousel-item">
+                <img class="carousel-img" src="Materijali/Home_Slike/1.jpeg" alt="...">
+                <div class="carousel-title">Welcome to More Sub Dive Resort</div>
+                <div class="carousel-text">The only 5 star dive resort in the area.</div>
+                <a href="https://wa.me/385993026898?text=Hello,%20I\'m%20interested%20in%20your%20scuba%20diving%20programs!">
+                    <div class="carousel-btn">Book now</div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-img" src="Materijali/Home_Slike/2.jpeg" alt="...">
+                <div class="carousel-title">Coral reefs exploration</div>
+                <div class="carousel-text">Choose from a vast variety of diving spots.</div>
+                <a href="">
+                    <div class="carousel-btn">Learn more</div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-img" src="Materijali/Home_Slike/3.jpeg" alt="...">
+                <div class="carousel-title">Azure Reef diving Trip for Begginers</div>
+                <div class="carousel-text">Jump into your first Diving adventure!</div>
+                <a href="">
+                    <div class="carousel-btn">Learn more</div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-img" src="Materijali/Home_Slike/4.jpeg" alt="...">
+                <div class="carousel-title">Snorkeling Trip</div>
+                <div class="carousel-text">Peak into the turquise coves!</div>
+                <a href="Stranice/Snorkeling/Snorkeling.html">
+                    <div class="carousel-btn">Learn more</div>
+                </a>
+            </div>
+
+
+        </div>
+
+        <!--Gallery
         <div class="gallery">
 
             <img class="img-from-gallery gallery0 on" src="Materijali/Home_Slike/1.jpeg" alt="" loading="lazy" >
@@ -283,8 +337,9 @@
 
 
         </div>
+    -->
 
-
+        <!--Main paragraph-->
         <div class="text-container">
 
             <div class="text-title">
@@ -295,27 +350,29 @@
             
             <div class="text-content">
                
-                The Adriatic Sea is a stunning destination for divers from all over the world, with its crystal-clear waters, diverse marine life, and fascinating underwater landscapes. if you're looking for an exceptional diving experience in this region, look no further than More PADI Dive Resort.
+                The Adriatic Sea is a stunning destination for divers from all over the world, with its crystal-clear waters, diverse marine life, and fascinating underwater landscapes. If you're looking for an exceptional diving experience in this region, look no further than More Sub PADI Dive Resort.
                 <br>
                 <br>
-                As the oldest dive center in the area, we've been providing diving experiences since the early 1970s, with the diving experience starting with SSI and CMAS instructors. We upgraded to PADI in 2000, and since then, we've been offering courses and one-day programs that meet international PADI standards. We're proud to be the only 5 Star PADI Dive Resort in the region, and we've been providing divers with the possibility of accommodation since 2009.
+                As the oldest dive center in the area, we've been providing diving experiences since the early 1 970s, with the diving experience starting with SSI and CMAS instructors. We upgraded to PADI in 2000, and since then, we've been offering courses and oneday programs that meet international PADI standards. We're proud to be the only 5 Star Dive Resort in the region, and we've been providing divers with the possibility of accommodation since 2009.
                 <br>
                 <br>
-                Our friendly and experienced team of PADI diving instructors can be flexible with dive course duration and start dates to suit you. We have dive course materials available in 14 languages. We believe that diving education should be accessible to everyone, regardless of language barriers, and we're committed to making sure you have the best possible learning experience.
+                Our friendly and experienced team of diving instructors can be flexible with dive course duration and start dates to suit you. We have dive course materials available in 14 languages. We believe that diving education should be accessible to everyone, regardless of language barriers, and we're committed to making sure you have the best possible learning experience.
                 <br>
                 <br>
-                When you dive with us, you'll be diving in a safe and fun environment under the guidance of our experienced dive instructors, dive masters, and dive guides. We believe that diving should not only be safe but also provide an opportunity to appreciate and learn about the amazing underwater world. The Adriatic Sea is home to an incredible diversity of marine life, including colorful fish, octopuses, starfish, and sea anemones, as well as lobsters, crabs, and even seahorses. And with visibility of up to 30 meters, you'll be able to see it all in stunning detail.
+                When you dive with us, you'll be diving in a safe and fun environment under the guidance of our experienced dive instructors, dive masters, and dive guides. We believe that diving should not only be safe but also provide an opportunity to appreciate and learn about the amazing underwater world. The Adriatic Sea is home to an incredible diversity of marine life, including colorful fish, octopuses, starfish, and sea anemones, as well as lobsters, crabs, and even seahorses. With visibility of up to 30 meters, you'll be able to see it all in stunning detail.
                 <br>
                 <br>
                 In addition to our courses and one-day programs, we also offer special diving packages for those who want to explore more of what the Adriatic has to offer. These packages include multiple dives over several days. with the opportunity to discover a range of dive sites and explore different underwater landscapes.
                 <br>
                 <br>
-                At More Sub PADI Dive Resort, our mission is to provide exceptional diving experiences that are safe, fun, and educational. Whether you're a beginner or an experienced diver, our team will work with you to create a customized diving experience that exceeds your expectations. So what are you waiting for? Dive into the Adriatic Sea with us and discover a whole new world underwater!
-
+                At More Sub, our mission is to provide exceptional diving experiences that are safe, fun, and educational. Whether you're a beginner or an experienced diver, our team will work with you to create a customized diving experience that exceeds your expectations. So what are you waiting for? Dive into the Adriatic Sea with us and discover a whole new world
+                underwater!
+                
 
             </div>
         </div>
 
+        <!--Ecology-->
         <div class="text-title eco-title">WE ARE TAKING CARE OF THE ENVIROMENT!</div>
 
         <div class="img-right-container-div">
@@ -328,7 +385,7 @@
                 One of the key ways we prioritize sustainability is through responsible diving practices. Our instructors emphasize the importance of buoyancy control, ensuring that divers have minimal impact on delicate marine life and coral reefs. We educate our students about the fragility of these ecosystems, encouraging them to observe from a respectful distance and avoid touching or damaging any underwater organisms.
                 <br>
                 <br>
-                In addition, we actively participate in underwater clean-up initiatives, organizing regular dives dedicated to removing marine debris. Our team and students collaborate to collect trash from the ocean floor, helping to restore the natural beauty of the underwater world and protect marine creatures from harmful pollution.
+                In addition, we actively participate in underwater clean-up initiatives, organizing regular dives dedicated to removing marine debris. Our team and students collaborate to collect trash from the seabed, helping to restore the natural beauty of the underwater world and protect marine creatures from harmful pollution.
 
             </div>
 
@@ -372,7 +429,7 @@
 
         </div>
 
-            
+        <!--Features & cards-->
         <div class="text-container-features">
 
             <div class="text-title">Featured Tours</div>
@@ -559,6 +616,7 @@
 
         </div>
 
+        <!--Footer-->
         <footer>
 
             <div class="footer-title">CONTACT INFO</div>
@@ -595,14 +653,7 @@
 
         </footer>
 
-
-
-
-
     </div>
-
-
-    
 
     <script src="Stranice/index/index.js"></script>
 </body>

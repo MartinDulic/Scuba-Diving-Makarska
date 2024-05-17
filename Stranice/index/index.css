@@ -1,29 +1,22 @@
+/*Color*/
 .color-green {
-
     color:rgb(71, 88, 65);
-
 }
-
 .gray-background {
-
     background-color:#eeeeee;
     display: block;
     padding-bottom: 10vh;
-
-
 }
 
 html, body {
-
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-
     overflow-x: hidden; /* Hide vertical scrollbar */
-
-
+    transition: left 0.5s;
 }
 
+/*Loading*/
 .loading-div {
 
     position: fixed;
@@ -130,9 +123,9 @@ html, body {
 
 }
 
-
 .page-content {
 
+    position: relative;
     /*background-color: red;*/
     padding: 0;
     margin: 0;
@@ -140,7 +133,7 @@ html, body {
     transition: 0.5s;
 }
 
-
+/*Header*/
 header {
 
     display: flex;
@@ -160,6 +153,7 @@ header {
     animation-duration: 4s;
 
     z-index: 100;
+    transition: left 0.5s;
 }
 
 @keyframes header {
@@ -169,7 +163,6 @@ header {
     100%{top:0;}
     
 }
-
 
 .menu-btn {
 
@@ -310,10 +303,11 @@ header {
 
 }
 
+/*Sidebar*/
 .sidebar-header {
 
     position: fixed;
-    left: 0;
+    left: -70;
     top: 0;
 
     height: 14vh;
@@ -321,7 +315,7 @@ header {
 
     border-bottom: 1px solid rgb(71, 88, 65);
 
-    margin-left: -70vw;
+    /*margin-left: -70vw;*/
     transition: 0.5s;
 
     display: flex;
@@ -347,7 +341,7 @@ header {
 
 .sidebar {
 
-    
+    z-index: 9999999;
     position: fixed;
     top: 14vh;
     left: 0;
@@ -363,9 +357,15 @@ header {
     
     padding-top: 30px;
 
-    margin-left: -70vw;
+    /*margin-left: -70vw;*/
+    left: -70vw;
     transition: 0.5s;
 
+    background-color: #fff;
+}
+
+.sidebar-main{
+    /*border-right: 1px inset gray;*/
 }
 
 .sidebar-div {
@@ -521,6 +521,140 @@ header {
 
 }
 
+/*Carousel*/
+
+.carousel{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 6s ease-in;
+}
+
+.active img {
+    transform: scale(1.4);
+}
+
+.carousel-title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    opacity: 0;
+
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 7vmin;
+    text-align: center;
+    color: #fff;
+}
+
+.active .carousel-title {
+    animation-fill-mode: both;
+    animation-name: slideUpTitle;
+}
+
+@keyframes slideUpTitle {
+    0% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 1;
+        top: 25%;
+    }
+    
+}
+
+.carousel-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    opacity: 0;
+
+    font-family: 'Gruppo', cursive;
+    font-size: 7vmin;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    color: #fff;
+}
+
+.active .carousel-text {
+    animation-fill-mode: both;
+    animation-name: slideUpText;
+}
+
+@keyframes slideUpText {
+    0% {
+        opacity: 0;
+        top: 60%;
+    }
+    100% {
+        opacity: 1;
+        top: 40%;
+    }
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    opacity: 0;
+
+
+    text-align: center;
+    color: rgb(20, 27, 65);
+    padding: 2vh;
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+.active .carousel-btn {
+    animation-fill-mode: both;
+    animation-name: slideUpBtn;
+}
+
+@keyframes slideUpBtn {
+    0% {
+        opacity: 0;
+        top: 90%;
+    }
+    100% {
+        opacity: 1;
+        top: 75%;
+    }
+}
+
+
+/*Gallery*/
 .gallery {
 
     position: relative;
@@ -663,6 +797,7 @@ header {
     top: 65%;
     left:40%;
     
+    
     display: flex;
     
     width: 20%;
@@ -718,6 +853,7 @@ header {
     transition: 0.2s;
 }
 
+/*Section Title*/
 .text-container {
 
     position: relative;
@@ -759,18 +895,13 @@ header {
 
 }
 
-
+/*Ecology*/
 .img-right-container-div {
-    
     background-color: white;
     padding-top: 10vh;
     
     padding-bottom: 10vh;
     display: flex;
-    
-    
-
-
 }
 .eco-container{
 
@@ -834,6 +965,7 @@ header {
     
 }
 
+/*Features & Cards*/
 .text-container-features {
 
     position: relative;
@@ -878,7 +1010,6 @@ header {
 
 
     transition:0.3s;
-
 
 }
 
@@ -950,11 +1081,7 @@ header {
 }
 
 .card-text-container {
-
     height: 100%;
-
-    
-
 }
 
 .card-title {
@@ -1037,11 +1164,12 @@ header {
 
 }
 
+/*Footer*/
 footer {
 
     background-color: rgb(71, 88, 65);
 
-    height: 25vh;
+    height: fit-content;
     width: 100%;
 
     text-align: center;
@@ -1071,8 +1199,8 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;*/
-
+    justify-content: center;
+*/
 }
 
 .footer-line {
@@ -1081,7 +1209,7 @@ footer {
 
 .footer-icon-div {
 
-    margin-top: 1vh;
+    /*margin-top: 1vh;*/
 
 
     /*
@@ -1105,6 +1233,7 @@ footer {
     color: white;
 
     margin-top: 0.2vh;
+    margin-bottom: 1vh;
 
     transition: 0.2s;
 }
@@ -1115,25 +1244,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 1200px) {
-
-    .features-container {
-
-
-        margin-left: 10vw;
-        margin-right: 10vw;
-    
-    
-    }
-
-
-
-
-
-
-}
-
-
+/*Video*/
 .video-div {
 
     height:fit-content;
@@ -1165,6 +1276,9 @@ footer {
     bottom: 20px;
     right: 20px;
 
+
+    /*siri video na max*/
+    width: 95vw;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1175,19 +1289,23 @@ footer {
 
     /*------------------------------------------------------------------------------------*/
     
-        /* main-page div class*/
+    /*
+        /* main-page div class
         .pageIsRight {
         
-            margin-left: 70vw;
-        
+            /*margin-left: 70vw;
+            left: 70vw;
+            transition: left 0.5s;
         }
 
-        /*sidebar div class*/
+        /*sidebar div class
         .sidebarIsRight {
 
-            margin-left: 0;
-
+            /*margin-left: 0;
+            left: 0;
+            transition: left 0.5s;
         }
+        */
 
         /* header logo container div class*/
         .logoMarginLeft {
@@ -1339,21 +1457,14 @@ footer {
 
 }
 
+@media only screen and (min-width: 1200px) {
 
-
-
-
-
-
-
-
-
-
-
-
+    .features-container {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
 
 .off{
-
     display: none;
-
 }

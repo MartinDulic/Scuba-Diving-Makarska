@@ -58,11 +58,12 @@
 .sticky-div-title {
 
     position: absolute;
+   /*
     width: 50vw;
     margin-left: 8vw;
 
     text-align: right;
-
+*/
     font-family: 'Anton', sans-serif;
     font-size: 3vh;
 
@@ -155,6 +156,9 @@
 
 
 }
+
+
+
 
 .white-background{
     position: relative;
