@@ -125,11 +125,12 @@
 }
 
 
+
 .scuba-diving-main-icons {
 
     background-color: white;
 
-    height: 10vh;
+    min-height: 10vh; 
     width: 100vw;
 
     padding-top: 2vh;
@@ -137,6 +138,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 .scuba-diving-main-icons-icon-div {
@@ -145,6 +148,8 @@
 
     width: 150px;
     height: 100%;
+
+    height: 10vh;
 
     margin-right: 2vw;
     margin-left: 2vw;
@@ -241,8 +246,8 @@
 
 .scuba-diving-info-list {
 
-    line-height: 1.8
-
+    line-height: 1.8;
+    font-weight: 700;
 }
 
 table {
@@ -280,7 +285,7 @@ td {
 
     text-align:center;
     width: 100vw;
-    font-size: 40px;
+    margin: 0;
 }
 
 .scuba-diving-info-tables-container {

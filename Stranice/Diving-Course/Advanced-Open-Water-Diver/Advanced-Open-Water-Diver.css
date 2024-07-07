@@ -24,6 +24,7 @@
 
 }
 
+
 .sticky-div {
 
     background-color: #eeeeee;
@@ -45,11 +46,21 @@
     justify-content: center;
 }
 
+.sticky-div-title-container {
+
+    position: relative;
+    flex: 5;
+
+    display: flex;
+    align-items: center;
+
+}
+
 .sticky-div-title {
 
     position: absolute;
     width: 50vw;
-    margin-left: 7vw;
+    margin-left: 10vw;
 
     text-align: right;
 
@@ -57,6 +68,7 @@
     font-size: 3vh;
 
 }
+
 
 .sticky-div-contents {
 
@@ -231,7 +243,8 @@
 
 .scuba-diving-info-list {
 
-    line-height: 1.8
+    line-height: 1.8;
+    font-weight: 700;
 
 }
 
@@ -270,6 +283,7 @@ td {
 
     text-align:center;
     width: 100vw;
+    margin: 0;
 
 }
 

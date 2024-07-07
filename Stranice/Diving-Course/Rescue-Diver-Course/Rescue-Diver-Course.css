@@ -240,7 +240,8 @@
 
 .scuba-diving-info-list {
 
-    line-height: 1.8
+    line-height: 1.8;
+    font-weight: 700;
 
 }
 
@@ -279,6 +280,7 @@ td {
 
     text-align:center;
     width: 100vw;
+    margin: 0;
 
 }
 

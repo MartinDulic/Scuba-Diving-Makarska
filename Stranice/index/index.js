@@ -102,7 +102,7 @@ $(document).ready(function() {
 
     });
 
-    initNavigation();
+    //initNavigation();
 
 
     let currentIndex = 0;
