@@ -2,6 +2,16 @@
 .color-green {
     color:rgb(71, 88, 65);
 }
+
+.bg-blue {
+    background-color: rgb(20, 27, 65);
+}
+
+.bg-green {
+    background-color: rgb(71, 88, 65);
+};
+
+
 .gray-background {
     background-color:#eeeeee;
     display: block;
@@ -853,6 +863,11 @@ header {
     transition: 0.2s;
 }
 
+
+
+
+
+
 /*Section Title*/
 .text-container {
 
@@ -877,12 +892,21 @@ header {
 
 }
 
+.text-title-flex {
+    
+    font-family: 'Anton', sans-serif;
+    font-size: 3vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
 .text-title-green {
 
     color: rgb(71, 88, 65);
     display: inline-block;
 
 }
+
 
 .text-content {
 
@@ -900,6 +924,155 @@ header {
     font-weight: 700;
     display: inline-block;
 }
+
+.text-container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+
+    gap: 24px;
+
+}
+
+.text-content-small {
+    
+    max-width: 700px;
+    text-align: center;
+    font-size: larger;
+}
+
+.button-container {
+    display: flex;
+    gap: 16px;
+}
+
+.button-text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 12px;
+    
+    color: white;
+    transition: 0.2s;
+    background-color: rgb(71, 88, 65);
+    border: 1px solid rgb(71, 88, 65);
+    text-decoration: none;
+}
+
+.button-text-content:hover {
+    background-color: white;
+    color: black;
+
+}
+
+
+
+
+
+/*Trips Overview section*/
+
+.trips-container {
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+
+.trip-title-text {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.text-subtitle-flex {
+    
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+
+.overview-subtitle {
+    color: black;
+
+    
+}
+
+.specification-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
+    max-width: 260px;
+    height: 212px;
+}
+
+.points-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.second-row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+
+
+
+/*Reviews*/
+
+.review-section {
+    background-color: #e9e9e9;
+    padding: 8vmin
+
+}
+
+.review-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+}
+
+.review {
+    flex:1;
+    min-height: 100px;
+    max-width: 320px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px;
+    background-color: rgb(71, 88, 65);
+    box-shadow: 0px 1px 5px 1px gray;
+    color: white;
+    text-align: justify;
+}
+
+
+.review-star {
+    color: gold;
+    margin-bottom: 12px;
+}
+
+
 
 /*Ecology*/
 .img-right-container-div {
@@ -987,7 +1160,7 @@ header {
 
     /*background-color: purple;*/
     
-    position: relative;
+    /* position: relative; */
 
     display: flex;
     flex-wrap: wrap;
@@ -996,7 +1169,7 @@ header {
     
     margin-left: 2vw;
     margin-right: 2vw;
-
+    padding-bottom: 10vh;
 
 }
 
@@ -1289,12 +1462,12 @@ footer {
 
 .whatsapp-link{
     position: fixed;
-    bottom: 5vh;
-    right: 5vw;
+    bottom: 30px;
+    right: 30px;
 }
 
 .whatsapp-icon{
-    width: 5vw;
+    width: 60px;
     border-radius: 100%;
 }
 
@@ -1397,9 +1570,31 @@ footer {
 
     
 
+    .trips-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-row-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    /*review*/
+    .review-container {
+        flex-direction: column;
+    }
+
+    .review {
+        min-width: 200px;
+    }
+
+
     .features-container {
         
-        position: absolute;
+        /* position: absolute; */
 
 
         
