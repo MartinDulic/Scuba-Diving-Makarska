@@ -194,7 +194,7 @@ header {
 
 .header-logo {
 
-    height: 10vh;
+    height: 15vh;
     margin-left: 2vw;
 
 }
@@ -665,6 +665,8 @@ header {
 
 
 /*Gallery*/
+
+
 .gallery {
 
     position: relative;
@@ -1045,7 +1047,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     gap: 24px;
 }
 
@@ -1063,7 +1065,7 @@ header {
     background-color: rgb(71, 88, 65);
     box-shadow: 0px 1px 5px 1px gray;
     color: white;
-    text-align: justify;
+    
 }
 
 
@@ -1470,6 +1472,23 @@ footer {
     width: 60px;
     border-radius: 100%;
 }
+
+
+
+/*Main Info Sections*/
+
+.badge {
+    font-size: 11px;
+    border-radius: 10%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: inline-block;
+    align-self: center;
+}
+
+
 
 @media only screen and (max-width: 992px) {
 
